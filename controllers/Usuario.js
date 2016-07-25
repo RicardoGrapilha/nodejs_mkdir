@@ -10,7 +10,7 @@ const CRUD = {
 		    if (err) //console.error(err) 
 		    	res.status(300).json({msg:err }); 
 		    else{
-		    	var fs = require("fs");
+		    	let fs = require("fs");
 		    	fs.writeFile('./public/cursos/'+nome_pasta+'/input.txt', 'Simply Easy Learning!',  function(err) {
 				   if (err) {
 				       return console.error(err);
